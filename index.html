@@ -1,37 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, 	initial-scale=1.0" /> -->
-  <title>ATC GULF</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-	awesome/5.10.2/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+  footer {
+  text-align: left;
+  padding: 3px;
+  background-color: rgba(11, 250, 47, 0.879);
+  color: rgb(48, 73, 235);
+}
+    * {
+      box-sizing: border-box;
+    }
+    .topnav {
+  overflow: hidden;
+  background-color: #186eee;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: blue;
+    text-align: left;
+  }
+}
+    </style>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  function scrollToFooter() {
+        document.getElementById('myFooter').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+<title>ATC Gulf</title>
+<link rel="icon" href="logo.jpg" type="image/jpg">
+
 </head>
 
 <body>
-  <header>
-    <h1>ATC GULF</h1>
-  </header>
   <main>
-    <img src="atc gulf main image.png" alt="ATC GULF main 	image">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="scrollToFooter()" </a>
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <h1 style="text-align: center; ">Welcome to ATC Gulf <br> Professional Technology Solution Provider</h1>
+    <img src="WVDERZr.jpg" alt="WVDERZr" name="WVDERZr.jpg" style="width: 50%;">
+    <div class="row">
+      <div class="column left">
+        <h2 style="text-align: center; color: red" >About Us</h2>
+        <h3 style="text-align: center;">Let Your Digital Transformation Journey Begin<br> We work with major technologies that your business needs</h3>
+        <img src="aboutus.png" alt="aboutus" name="aboutus.png" style="width: 100%;">
+      </div>
+      <div class="column middle">
+        <h2 style="text-align: center; color: red" >Our Expertise</h2>
+        <h3 style="text-align: center;">Converged Networks<br>Infrastructure and Physical Security<br>Clouds Computing and Virtualizations<br>Consultancy and Technical Auditing<br>Audio Visual&nbsp;</h3>
+        <img src="data center-01.png" alt="data center-01" name="data center-01.png" style="width: 100%;">
+      </div>
+      <div class="column right">
+        <h2 style="text-align: center; color: red" >Our Approach&nbsp;</h2>
+        <h3 style="text-align: center;">We deliver technology with creativity and ease with tested solutions <br> using standard global implementation practices<br></h3>
+        <img src="aim high.png" alt="aim high" name="aim high.png" style="width: 100%;">
+      </div>
+    </div>
+<footer id="footer">
+  <p>Please drop us an email for your inquiries</p>
+  <a href="mailto:info@atc-gulf.com">info@atc-gulf.com</a>
+</footer>
 
-    <h2>About Us <h2>
-        <p>The world of technology is fast-paced. Our goal is to provide an experience that is tailored
-          to your company's needs. No matter the budget, we pride ourselves on providing professional customer service.
-          </p>
-
-        <p>We deliver technology with creativity and ease, so you can focus on accomplishing your daily tasks in
-          various environments, we strive to make your time count the most by increasing your efficiency through our
-          well designed and tested solutions using standard global implementation practices.</p>
-
-        <img src="data center.png" alt="data center image">
-
-        <h2>Contact Us <h2>
-            <p>Please drop us an email for your enquiries at</p>
-            <a href="mailto:info@atc-gulf.com">info@atc-gulf.com</a>
-    </maim>
+</maim>
 </body>
 
 </html>
